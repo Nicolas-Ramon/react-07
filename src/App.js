@@ -27,7 +27,7 @@ class App extends React.Component {
       // Use this data to update the state
       .then(data => {
         this.setState({
-          oneQuote: data.results['{1}'],
+          oneQuote: data[0],
         });
     });
   }
